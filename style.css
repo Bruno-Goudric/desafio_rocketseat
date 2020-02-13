@@ -125,3 +125,31 @@ header div.container a{
     color: #777777;
 }
 
+/* PAGE ABOUT */
+
+.about{
+    width: 940px;
+    height: 880px;
+    margin: 28px auto;
+}
+
+.about h2{
+    margin-top: 28px;
+    margin-left: 28px;
+
+}
+
+.content-about p{
+    color: #444444;
+    font-size: 18px;
+    padding: 28px;
+    
+}
+
+
+.content-about span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #111111;
+    padding: 24px;
+}
