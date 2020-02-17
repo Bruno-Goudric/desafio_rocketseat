@@ -98,7 +98,7 @@ header div.container a{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 22px;
     width: 898px;
-    height: 366px;
+    height: 800px;
     margin: 28px auto;
     margin-bottom: 54px;
 }
@@ -135,7 +135,7 @@ header div.container a{
 
 .about h2{
     margin-top: 28px;
-    margin-left: 28px;
+    margin-left: 28gipx;
 
 }
 
