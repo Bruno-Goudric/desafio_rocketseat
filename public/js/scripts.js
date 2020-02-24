@@ -1,20 +1,28 @@
-const modalOverlay = document.querySelector('.modal-overlay');
 const cards = document.querySelectorAll('.card');
+const showHides = document.getElementsByClassName('recipes')
 
-for(let card of cards) {
-    card.addEventListener("click", function() {
-        const title = card.querySelector(".card-title").innerHTML
-        const author = card.querySelector(".author").innerHTML
-        const imgId = card.getAttribute("id")
+const description = document.querySelector(".description")
 
-        modalOverlay.classList.add("active")
-        modalOverlay.querySelector("img").src = `./assets/${imgId}.png`
 
-        modalOverlay.querySelector(".modal-title").innerHTML = title
-        modalOverlay.querySelector(".modal-author").innerHTML = author
+
+for(let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener("click", function(){
+        window.location.href = `/recipe/${i}`
     })
 }
 
-document.querySelector('.close-modal').addEventListener("click", function() {
-    modalOverlay.classList.remove('active')
-})
+
+for(let showHide of showHides){
+    const content = showHide.querySelector('a')
+    console.log(content)
+    content.addEventListener('click', function(){
+    if(content.innerHTML == "esconder"){
+        showHide.querySelector('.description').classList.add('hidden')
+        content.innerHTML = "mostrar"
+    }else{
+        showHide.querySelector('.description').classList.remove('hidden')
+        content.innerHTML = "esconder"
+    }   
+    })
+}
+
