@@ -27,6 +27,8 @@ header {
     margin: 15px auto;
 }
 
+
+
 /* LINKS */
 
 .links {
@@ -341,6 +343,18 @@ section .recipe{
     display: none;
 }
 
+/* ADM */
+
+.global_adm{
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;   
+}
+
+.header_adm{
+    padding: 20px 0;
+    background-color: #111;
+}
 
 
 

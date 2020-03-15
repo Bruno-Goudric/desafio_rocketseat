@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            {% block head %}
+            <title>Foodly</title>
+            {% endblock %} 
+
+        <!-- link CSS -->
+        <link rel="stylesheet" href="/css/admin.css">
+        <!-- link dos scripts -->
+        <link rel="stylesheet" href="/js/scripts.js">
+        <!-- link icone -->
+        <link rel="icon" href="/assets/chef.png">
+        <!-- Fonte Roboto -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="global">
+            <header>
+                <div class="links">
+                    <img src="/assets/logo_adm.png" alt="">
+                </div>
+            </header>
+            <div class="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div> 
+        
+
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

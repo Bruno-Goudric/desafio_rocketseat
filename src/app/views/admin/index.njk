@@ -1,0 +1,30 @@
+{% extends "./fields.njk" %}
+
+{% block content %}
+    <section>
+        <div class="title">
+            <h1>Genenciar receitas</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="cards">
+          {% for item in items %}
+            <div class="card">
+              <div class="card__image-container">
+                <img src="{{item.image}}" alt="">
+              </div>
+              <div class="card__content">
+                <h1 class="card-title">{{item.title}}</h1>
+              </div>
+              <div class="card__info">
+                <p class="author">{{item.author}}</p>
+              </div>
+              <div class="card_link">
+                <a href="#">Visualizar</a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>  
+   </section>
+{% endblock content %}
