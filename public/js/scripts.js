@@ -25,4 +25,3 @@ for(let showHide of showHides){
     }   
     })
 }
-
