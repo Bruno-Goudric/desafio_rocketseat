@@ -14,16 +14,18 @@
               <div class="card__image-container">
                 <img src="{{item.image}}" alt="">
               </div>
-              <div class="card__content">
-                <h1 class="card-title">{{item.title}}</h1>
-              </div>
-              <div class="card__info">
-                <p class="author">{{item.author}}</p>
-              </div>
-              <div class="card_link">
-                <a href="#">Visualizar</a>
-              </div>
             </div>
+            <div class="card">
+              <div class="card__content">
+                  <h1 class="card-title">{{item.title}}</h1>
+                </div>
+                <div class="card__info">
+                  <p class="author">por {{item.author}}</p>
+                </div>
+                <div class="card_link">
+                  <a href="/admin/recipes/{{item.id}}">Visualizar</a>
+                </div>
+               </div> 
           {% endfor %}
         </div>  
    </section>

@@ -17,10 +17,10 @@ body {
 }
 
 .global_adm{
-    max-width: 1400px;
+    max-width: 940px;
     height: 80px;
     margin: 0 auto;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 header{
@@ -28,12 +28,11 @@ header{
     background-color: #111;
 }
 
-header .links{
-    margin-left: 231px;
-}
 
+header .links,
 .content{
-    margin-left: 231px;
+    width: 940px;
+    margin: 0 auto;
 }
 
 /* INDEX */
@@ -44,8 +43,232 @@ header .links{
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin: 34px 10px;
+    grid-template-columns: 200px 200px 200px 200px;
     cursor: pointer;
+}
+
+.card__image-container{
+    width: 172px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.card__image-container img {
+    width: 172px;
+    height: 80px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.card__content h1{
+    font-size: 18px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    filter: brightness(50%);
+    color: #999;
+}
+
+.card__info {
+    color: #666;
+    font-size: 14px;
+    filter: brightness(90%);
+    margin-bottom: 10px;
+}
+
+.card_link a{
+    text-decoration: none;
+}
+
+/* CREATE */
+
+.title_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 450px;
+    margin-top: 28px;
+}
+
+.title_form h1{
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-bottom: 28px;
+}
+
+.title_form button{
+    width: 139px;
+    height: 37px;
+    background: #6558C3;
+    border-radius: 4px;
+    border-radius: 4px;
+    
+
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+
+
+}
+
+.item div:nth-child(1){
+    color: #111;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 19px 0;
+}
+
+
+
+input {
+    width: 940px;
+    height: 49px;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.item button:nth-child(1),
+span:nth-child(1){
+    font-weight: bold;
+    font-size: 16px;
+    color: #6558C3;
+    border: 0;
+    background: #fff;
+    
+}
+
+.item textarea{
+    width: 940px;
+    min-height: 257px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+/* PAGE SHOW  */
+
+.recipe-action{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-top: 48px;
+
+}
+
+.recipe-action .recipe-action-title span{
+    font: 24px;
+    font-weight: bold;
+    color: #111;
+    line-height: 28px;
+    
+}
+
+.recipe-action  a.btn{
+    padding: 8px;
+    background-color: #6558C3;
+    color: white;
+    border-radius: 4px;
+    margin-left: 70%;
+    width: 136px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+a.btn{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.banner img{
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+    
+    
+}
+
+.recipe-title{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.recipe-title h1{
+    line-height: 42px;
+    color: #111;
+    font-size: 36px;
+    font-weight: bold;
+    
+       
+}
+
+.recipe-title p{
+    font-size: 20px;
+    color: #777;
+    
+    
+}
+
+section .recipe{
+    margin: 50px auto;
+}
+
+.recipe h4, a{
+    display: inline-block;
+}
+
+.recipe h4{
+    font-size: 24px;
+    color: #111;
+    line-height: 28px;
+}
+
+.recipe-make{
+    margin-top: 40px;
+}
+
+.recipe-info{
+    margin-top: 50px;
+}
+
+.recipe a{
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #999999;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.recipe ul{
+    margin-top: 20px;
+}
+
+.recipe ul li{
+    font-size: 18px;
+    color: #444;
+    line-height: 28px;
+}
+
+.recipe p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+    line-height: 28px;
+}
+
+.description.hidden{
+    display: none;
 }

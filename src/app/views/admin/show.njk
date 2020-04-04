@@ -1,0 +1,65 @@
+{% extends "./fields.njk" %}
+
+{% block content %}
+    <section>
+        <div class="recipe-action">
+            <div class="recipe-action-title">
+                <span>Receita: {{item.title}}</span>
+            </div>
+            <div>
+                <a href="" class="btn">Editar Receita</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="banner">
+            <img src="{{item.image}}" alt="{{item.title}}">
+        </div>  
+    </section>
+    <section class="recipe-title">
+        <div > 
+            <h1>{{item.title}}</h1>
+            <p>por {{item.author}}</p>
+        </div>
+    </section>
+    <section>
+        <div class="recipe">
+            <div class="recipes">
+                <div class="recipe-ingredient">
+                    <h4>Ingredientes</h4>
+                    <a>Esconder</a>
+                    <div class="description">
+                        <ul>
+                        {% for items in item.ingredients %}
+                            <li>{{items}}</li>
+                        {% endfor %}   
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+            <div class="recipes">
+                <div class="recipe-make">
+                    <h4>Modo de Preparo</h4>
+                    <a>Esconder</a>
+                    <div class="description">
+                        <ul>
+                            {% for items in item.preparation %}
+                            <li>{{items}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="recipes">
+                <div class="recipe-info">
+                    <h4>Informações adicionais</h4>
+                    <a>Esconder</a>
+                    <div class="description">
+                        <p>{{item.information}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
