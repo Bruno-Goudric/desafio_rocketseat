@@ -1,25 +1,25 @@
-{% extends "./fields.njk" %}
+{% extends "./layout.njk" %}
 
 {% block content %}
     <section>
         <div class="recipe-action">
             <div class="recipe-action-title">
-                <span>Receita: {{item.title}}</span>
+                <span>Receita: {{recipe.title}}</span>
             </div>
             <div>
-                <a href="" class="btn">Editar Receita</a>
+                <a href="/admin/recipes/{{recipe.id}}/edit" class="btn">Editar Receita</a>
             </div>
         </div>
     </section>
     <section>
         <div class="banner">
-            <img src="{{item.image}}" alt="{{item.title}}">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
         </div>  
     </section>
     <section class="recipe-title">
         <div > 
-            <h1>{{item.title}}</h1>
-            <p>por {{item.author}}</p>
+            <h1>{{recipe.title}}</h1>
+            <p>por {{recipe.author}}</p>
         </div>
     </section>
     <section>
@@ -30,8 +30,8 @@
                     <a>Esconder</a>
                     <div class="description">
                         <ul>
-                        {% for items in item.ingredients %}
-                            <li>{{items}}</li>
+                        {% for recipes in recipe.ingredients %}
+                            <li>{{recipes}}</li>
                         {% endfor %}   
                         </ul>
                     </div>    
@@ -43,8 +43,8 @@
                     <a>Esconder</a>
                     <div class="description">
                         <ul>
-                            {% for items in item.preparation %}
-                            <li>{{items}}</li>
+                            {% for recipes in recipe.preparation %}
+                            <li>{{recipes}}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -55,7 +55,7 @@
                     <h4>Informações adicionais</h4>
                     <a>Esconder</a>
                     <div class="description">
-                        <p>{{item.information}}</p>
+                        <p>{{recipe.information}}</p>
                     </div>
                 </div>
             </div>

@@ -105,7 +105,7 @@ header .links,
 
     font-weight: bold;
     font-size: 16px;
-    color: #FFFFFF;
+    color: rgb(251, 251, 251);
 
 
 }
@@ -271,4 +271,39 @@ section .recipe{
 
 .description.hidden{
     display: none;
+}
+
+/* Edit */
+
+.form_action{
+    display: grid;
+    grid-template-columns: 700px 150px 100px;
+    grid-gap: 5px;
+}
+
+.form_action .btn_delete{
+    width: 92px;
+    height: 37px;
+    background: #DC4747;
+    border-radius: 4px;
+    border-radius: 4px;
+    
+
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(251, 251, 251);
+}
+
+.form_action .btn_save{
+    width: 139px;
+    height: 37px;
+    background: #6558C3;
+    border-radius: 4px;
+    border-radius: 4px;
+    margin-left: -60px;
+    
+
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(251, 251, 251);
 }
